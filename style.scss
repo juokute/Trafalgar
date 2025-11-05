@@ -1,0 +1,52 @@
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 480px;
+
+$padding-big: 24px;
+$padding-medium: 16px;
+$padding-small: 8px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  // max-width: $xl;
+  align-content: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 40px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.nav-elements {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  /* padding: 14px; */
+  font-size: 18px;
+  opacity: 50%;
+}
+.name {
+  font-size: 48px;
+}
+.description {
+  font-size: 21px;
+  font-weight: lighter;
+}
+.element {
+  position: fixed;
+  margin-top: 160px;
+}
