@@ -56,14 +56,14 @@ header {
   opacity: 50%;
   color: $violet;
 
+  &:hover {
+    opacity: 100%;
+    font-weight: bold;
+  }
+
   a {
     text-decoration: none;
     color: $violet;
-  }
-  a:hover {
-    font-weight: bold;
-    // opacity: 100%;
-    // transition: ease-in-out
   }
 }
 
