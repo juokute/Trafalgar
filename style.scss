@@ -113,4 +113,31 @@ header {
   }
 }
 
-
+.services-body {
+  background-image: url("./assets/big_element.svg"), url("./assets/element-services.svg");
+  background-position: left center, right center;
+  background-repeat: no-repeat;
+}
+.services-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 36px;
+  text-align: center;
+  line-height: 56px;
+}
+div.rectangle {
+  height: 2px;
+  width: 56px;
+  background-color: $black;
+  border-radius: 5px;
+  margin-top: 26px;
+  margin-bottom: 33px;
+}
+.description-services {
+  color: $grey;
+  font-size: 18px;
+  text-align: center;
+}
