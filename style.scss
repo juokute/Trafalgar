@@ -6,7 +6,7 @@ $sm: 480px;
 
 $padding-header: 56px;
 $padding-big: 24px;
-$padding-medium: 16px;
+$padding-medium: 14px;
 $padding-small: 8px;
 
 $margin-home: 56px 12%;
@@ -37,21 +37,17 @@ $font-size-16: 16px;
 
 header {
   display: flex;
-  justify-content:space-between;
-  // flex-wrap: wrap;
-  // padding: 0 $padding-header 0 $padding-header;
+  justify-content: space-between;
   margin: $margin-home;
-  // width: $xxl;
-  // background-color: skyblue;
 }
-
+.element {
+  position: fixed;
+  margin-top: 80px;
+}
 .nav-container {
   display: flex;
   justify-content: space-evenly;
-  column-gap: 40px;
-  row-gap: 10px;
   flex-wrap: wrap;
-  margin-top: 14px;
 }
 
 .nav-elements {
@@ -61,12 +57,11 @@ header {
   font-size: $font-size-18;
   opacity: 50%;
   color: $violet;
-
+  padding: $padding-medium $padding-medium 0 $padding-medium;
   &:hover {
     opacity: 100%;
     font-weight: bold;
   }
-
   a {
     text-decoration: none;
     color: $violet;
@@ -76,46 +71,46 @@ header {
 .home {
   display: flex;
   justify-content: space-evenly;
-  // align-content: center;
-  // flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
+  .home-left {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    max-width: 445px;
+    max-height: 338px;
+    .name {
+      font-size: 48px;
+      line-height: 56px;
+    }
+    .description {
+      font-size: 21px;
+      font-weight: lighter;
+      color: #7d7987;
+      line-height: 32px;
+      margin-top: 25px;
+      margin-bottom: 45px;
+    }
+    .home-button {
+      background-color: #458ff6;
+      color: white;
+      width: 200px;
+      border-radius: 55px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      line-height: 60px;
+      cursor: pointer;
+    }
+    .home-button:hover {
+      background-color: $white;
+      color: $blue;
+      border: 2px solid $blue;
+    }
+  }
+  .home-image {
+    max-width: 693px;
+  }
 }
 
-.home-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  max-width: 445px;
-  max-height: 338px;
-}
 
-.name {
-  font-size: 48px;
-  line-height: 56px;
-}
-
-.description {
-  font-size: 21px;
-  font-weight: lighter;
-  color: #7d7987;
-  line-height: 32px;
-}
-
-.home-image {
-}
-
-.home-button {
-  background-color: #458ff6;
-  color: white;
-  width: 200px;
-  height: 56px;
-  border-radius: 55px;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  line-height: 60px;
-}
-
-.element {
-  position: fixed;
-  margin-top: 160px;
-}
