@@ -114,7 +114,8 @@ header {
 }
 
 .services-body {
-  background-image: url("./assets/big_element.svg"), url("./assets/element-services.svg");
+  background-image: url("./assets/big_element.svg"),
+    url("./assets/element-services.svg");
   background-position: left center, right center;
   background-repeat: no-repeat;
 }
@@ -140,4 +141,33 @@ div.rectangle {
   color: $grey;
   font-size: 18px;
   text-align: center;
+}
+
+.container-services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 34px;
+
+  .box {
+    background-color: $white;
+    align-content: center;
+    box-shadow: 10px 40px 50px rgb(229, 233, 246, 0.4);
+    width: 350px;
+    height: 365px;
+    border-radius: 20px;
+    // margin: 37px 34px;
+    padding: 47px 44px;
+
+    .paragraph-name {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 56px;
+    }
+    .p-services {
+      font-size: 16px;
+      color: $grey;
+      line-height: 28px;
+    }
+  }
 }
