@@ -307,9 +307,9 @@ div.rectangle {
 .testimonials-body {
   .back {
     margin-top: 10px;
+    z-index: 3;
   }
 }
-
 .testimonials-big-section {
   display: flex;
   flex-direction: column;
@@ -317,11 +317,11 @@ div.rectangle {
   align-items: center;
   height: 100vh;
   gap: 30px;
-  position: relative;
   z-index: 1;
 }
 
 .testimonials-section {
+  position: relative;
   background-image: url("./assets/rectangle13.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -331,11 +331,27 @@ div.rectangle {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1120px;
 
+  width: 1120px;
   margin: 0 auto;
   color: $white;
   text-align: center;
+
+  .testimonials-element {
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .testimonials-element2 {
+    position: absolute;
+    top: 60%;
+    left: -4%;
+    z-index: -1;
+    pointer-events: none;
+  }
 
   .rectangle-white {
     width: 56px;
@@ -348,9 +364,8 @@ div.rectangle {
 
 .testimonials-bottom-div {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  // gap: 20px;
+  justify-content: space-evenly;
   width: 100%;
 }
 
@@ -393,18 +408,4 @@ div.rectangle {
 .testimonials-arrow-image {
   height: 20px;
   cursor: pointer;
-}
-
-.testimonials-element {
-  position: absolute;
-  top: 175px;
-  right: 185px;
-  z-index: 2;
-}
-
-.testimonials-element2 {
-  position: absolute;
-  top: 475px;
-  left: 190px;
-  z-index: 0;
 }
