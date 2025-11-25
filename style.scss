@@ -304,44 +304,70 @@ div.rectangle {
   right: 0;
 }
 
+.testimonials-body {
+  .back {
+    margin-top: 10px;
+  }
+}
+
+.testimonials-big-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
 .testimonials-section {
   background-image: url("./assets/rectangle13.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  min-height: 425px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1120px;
-  min-height: 425px;
+  width: 1120px;
+
   margin: 0 auto;
-  height: 100vh;
   color: $white;
   text-align: center;
 
   .rectangle-white {
     width: 56px;
-    height: 2px;
-    border-radius: 5px;
+    height: 3px;
+    border-radius: 6px;
     margin-top: 26px;
-    margin-bottom: 33px;
+    margin-bottom: 70px;
   }
 }
 
 .testimonials-bottom-div {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  // gap: 20px;
   width: 100%;
-
 }
 
 .testimonials-left-side {
   display: flex;
   justify-content: space-evenly;
-  align-content: space-evenly;
+  align-items: center;
+  gap: 33px;
   flex-wrap: wrap;
+  p {
+    text-align: left;
+    span {
+      font-size: $font-size-18;
+      opacity: 85%;
+      font-weight: 250;
+    }
+  }
 }
 
 .testimonials-edward-newgate {
@@ -350,12 +376,35 @@ div.rectangle {
 }
 
 .testimonials-paragraph {
-  width: 400px; 
+  width: 400px;
   height: 120px;
   text-align: left;
   font-size: $font-size-19;
   line-height: 30px;
   opacity: 90%;
   font-weight: 250;
-  
+}
+
+.testimonials-name {
+  font-size: $font-size-22;
+  line-height: 30px;
+}
+
+.testimonials-arrow-image {
+  height: 20px;
+  cursor: pointer;
+}
+
+.testimonials-element {
+  position: absolute;
+  top: 175px;
+  right: 185px;
+  z-index: 2;
+}
+
+.testimonials-element2 {
+  position: absolute;
+  top: 475px;
+  left: 190px;
+  z-index: 0;
 }
