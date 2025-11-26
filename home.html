@@ -13,17 +13,41 @@
 </head>
 
 <body>
-    <img class="element" src="./assets/element.svg" alt="element">
-    <header>
-        <img class="logo" src="./assets/logo.svg" alt="logo"></div>
-        <nav class="nav-container">
-            <li class="nav-elements"><a href="./home.html">Home</a></li>
-            <li class="nav-elements"><a href="./find-a-doctor.html">Find a doctor</a></li>
-            <li class="nav-elements"><a href="./apps.html">Apps</a></li>
-            <li class="nav-elements"><a href="./testimonials.html">Testimonials</a></li>
-            <li class="nav-elements"><a href="./about-us.html">About us</a></li>
-        </nav>
-    </header>
+    <div id="app">
+        <header>
+            <img class="element" src="./assets/element.svg" alt="element">
+            <nav>
+                <img class="logo" src="./assets/logo.svg" alt="logo">
+                <div class="nav-plus-mob-icon">
+                    <ul class="nav-container">
+                        <li class="nav-elements"><a href="./home.html">Home</a></li>
+                        <li class="nav-elements"><a href="./find-a-doctor.html">Find a doctor</a></li>
+                        <li class="nav-elements"><a href="./apps.html">Apps</a></li>
+                        <li class="nav-elements"><a href="./testimonials.html">Testimonials</a></li>
+                        <li class="nav-elements"><a href="./about-us.html">About us</a></li>
+                    </ul>
+                    <div class="nav-elements mobile-menu-icon">
+                        <label class="hamburger" for="mob-menu">
+                            <div></div>
+                        </label>
+                    </div>
+                </div>
+            </nav>
+            <input type="checkbox" id="mob-menu">
+            <nav class="nav-container-mobile">
+                <label class="close" for="mob-menu"><b>x</b></label>
+                <ul class="mobile">
+                    <li class="nav-elements"><a href="./home.html">Home</a></li>
+                    <li class="nav-elements"><a href="./find-a-doctor.html">Find a doctor</a></li>
+                    <li class="nav-elements"><a href="./apps.html">Apps</a></li>
+                    <li class="nav-elements"><a href="./testimonials.html">Testimonials</a></li>
+                    <li class="nav-elements"><a href="./about-us.html">About us</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
 
     <section class="home">
         <div class="home-left">
